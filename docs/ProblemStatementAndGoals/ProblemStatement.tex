@@ -2,6 +2,9 @@
 
 \usepackage{tabularx}
 \usepackage{booktabs}
+\usepackage{parskip}
+
+\setlength{\parindent}{0pt}
 
 \title{Problem Statement and Goals\\\progname}
 
@@ -16,85 +19,236 @@
 
 \maketitle
 
+\newpage{}
+
 \begin{table}[hp]
 \caption{Revision History} \label{TblRevisionHistory}
 \begin{tabularx}{\textwidth}{llX}
 \toprule
 \textbf{Date} & \textbf{Developer(s)} & \textbf{Change}\\
 \midrule
-Date1 & Name(s) & Description of changes\\
-Date2 & Name(s) & Description of changes\\
-... & ... & ...\\
+2026/09/24 & Mohammad Bilal & Completed sections 1.1, 4, \& reflection \\
+2026/09/25 & Jake Finlay & Completed section 1.4 \\
+2026/09/26 & Ahsan Muzammil & Section 2 Goals, Section 3 Stretch Goals, Reflection (Ahsan) \\
+2026/09/26 & Jackson Beach & Completed section 1.2 and Reflection (Jackson) \\
+2026/09/27 & Mohammad Bilal & Updated reflection \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
+\newpage{}
+
 \section{Problem Statement}
-
-\wss{You should check your problem statement with the
-\href{https://smiths.github.io/capTemplate/Checklists/ProbState-Checklist.pdf}
-{problem statement checklist}}. 
-
-\wss{You can change the section headings, as long as you include the required
-information.}
 
 \subsection{Problem}
 
-\wss{What problem are you trying to solve?  Why is it important? Do not talk
-about how you will solve the problem, only what the problem is.  AI is rarely
-part of the problem.  The problem is ``what'' you want to do, not ``how'' you
-want to do it.  The problem statement should be written in a way that is
-understandable to a non-technical audience.}
+Paediatric ophthalmology appointments can be stressful and unfamiliar for children.
+Procedures such as vision testing, eye drops, and slit-lamp examinations may cause anxiety, particularly when children do not know what to expect.
+This anxiety can make it difficult to cooperate during examinations, potentially affecting the quality and completeness of clinical assessments.
+For example, a study of 298 children undergoing cycloplegic eye examinations found that 26\% experienced significant distress before receiving eye drops,
+while uncooperative children were also more anxious and required more time to complete the examination \cite{ChiaEtAl2015}.
+
+Children and their families therefore need adequate preparation for common ophthalmology procedures before attending an appointment.
+Without appropriate preparation, unfamiliar clinical experiences may contribute to increased anxiety, reduced cooperation, and longer or more difficult appointments.
+This project addresses the need for an accessible, child-friendly way to help children become more familiar and comfortable with the paediatric ophthalmology experience.
 
 \subsection{Inputs and Outputs}
 
-\wss{Characterize the problem in terms of ``high level'' inputs and outputs.  
-Use abstraction so that you can avoid details.}
+\textbf{Inputs:} Physical interaction with mobile device interface by the user, as prompted by the system. \\
+\textbf{Outputs:} Indication of task/stage completion in the game, if done successfully, or hints to try again, if not.
 
 \subsection{Stakeholders}
 
 \subsection{Environment}
 
-\wss{Hardware and Software Environment for the users.  The developer environment
-is summarized as part of the developer plan.}
+\subsubsection{Software}
+
+The application will run on iOS and Android operating systems. The application will be distributed through the Apple App Store and Google Play Store.
+
+\subsubsection{Hardware}
+
+The application will run on consumer smartphones and tablets. An internet connection will be required to download the application.
 
 \section{Goals}
+\begin{enumerate}
+    \item \textbf{Reduce Children's Anxiety}: 
+    The application will reduce children's anxiety toward common ophthalmology procedures 
+    (i.e., vision testing, eye drops, slit-lamp examinations, etc.) by helping them understand 
+    what to expect before their appointment. Success will be measured by comparing children's 
+    reported anxiety before and after using the application, as well as comparing anxiety 
+    levels between children who use the application for preparation and those who do not. 
+    Child appropriate anxiety measures, along with parent or clinician observations where 
+    appropriate, can be used for these comparisons.
 
+    \item \textbf{Improve Children's Cooperation During Examinations}: 
+    The application will improve children's cooperation during ophthalmology examinations, 
+    allowing practitioners to complete assessments with fewer interruptions or repeated 
+    attempts. Success will be measured through clinician rated cooperation, successful 
+    completion of examination procedures, and the number of attempts required to complete 
+    selected procedures.
+
+    \item \textbf{Maintain Engagement Across Age Groups}: 
+    The application will provide age appropriate and engaging activities that encourage 
+    children across the target age range (i.e., ages 3 to 7) to actively participate in 
+    their preparation. Success will be measured through activity completion rates, usability 
+    feedback, and child reported enjoyment and engagement, with results compared across 
+    age groups.
+
+    \item \textbf{Enable Effective At Home Preparation}: 
+    The application will enable children and their families to prepare for ophthalmology 
+    appointments independently before arriving at the clinic. Success will be measured 
+    through usability and feasibility testing with children and parents, including successful 
+    completion of preparation activities and parent feedback on whether the application 
+    helped their child feel prepared for the appointment.
+
+    \item \textbf{Improve Clinical Efficiency}: 
+    The application will reduce difficulties and time associated with completing paediatric 
+    ophthalmology examinations by preparing children before their appointment. Success will 
+    be measured by comparing examination duration, repeated procedure attempts, and 
+    practitioner rated examination difficulty between children who use the application and 
+    children who do not.
+\end{enumerate}
 \section{Stretch Goals}
 
-\wss{Goals you hope to get to, but not necessary.  They are also helpful if the
-scope of the original project needs to be expanded.}
+\begin{enumerate}
+    \item \textbf{Personalize Preparation}: The application will personalize preparation 
+    activities according to the procedures expected during each child's upcoming appointment, 
+    ensuring that children focus on relevant examinations rather than completing the same activities 
+    regardless of their visit. Success will be measured by evaluating whether personalized preparation 
+    improves engagement, anxiety, or cooperation compared with a standardized preparation experience.
 
+    \item \textbf{Provide Immersive Procedure Simulations}: The application will use augmented reality 
+    to provide more realistic simulations of common ophthalmology procedures, giving children additional 
+    exposure to the clinical experience before their appointment. Success will be measured by comparing 
+    anxiety, preparedness, and cooperation between children using the standard application and those using 
+    the augmented reality simulations.
+\end{enumerate}
 \section{Custom Documents (CDs)}
 
-\wss{For CAS 741: State whether the project is a research project. This
-designation, with the approval (or request) of the instructor, can be modified
-over the course of the term.}
+The custom documents chosen for the project are a \textbf{Client Interview Report} and a \textbf{Usability Report}.
 
-\wss{For SE Capstone: List your custom documents (CDs).  Potential CDs include
-usability testing, code walkthroughs, user documentation, formal proof,
-GenderMag personas, Design Thinking, etc.  (The full list is on the course
-outline and in Lecture 02.) Normally the number of CDs will be two (one per
-term).  Approval of the CDs will be part of the discussion with the instructor
-for approving the project. The CDs, with the approval (or request) of the
-instructor, can be modified over the course of the term.}
+The Client Interview Report will document the interviews conducted with users and stakeholders.
+It will summarize the main points and feedback from the interviews and how they helped guide the project.
+
+The Usability Report will document the results of usability testing and the feedback received from users.
+This will include the testing process, results, and discussion.
 
 \newpage{}
+\setlength{\parskip}{0.8em}
+\setlength{\parindent}{0pt}
 
-\section*{Appendix --- Reflection}
+\section{Appendix --- Reflection}
 
-\wss{Not required for CAS 741}
+\subsection*{Mohammad Bilal}
 
-\input{../Reflection.text}
+\subsubsection*{What went well while writing this deliverable?}
 
-\begin{enumerate}
-    \item What went well while writing this deliverable?
-    \item What pain points did you experience during this deliverable, and how
-    did you resolve them?
-    \item How did you and your team adjust the scope of your goals to ensure
-    they are suitable for a Capstone project (not overly ambitious but also of
-    appropriate complexity for a senior design project)?
-\end{enumerate}
+One thing that went well was that the problem itself was relatively clear to the team and I.
+The project description gave a good starting point for identifying the main issue and
+explaining why it matters. Meeting with the supervisor was also helpful in clarifying the project's
+scope and better understanding the overall vision for the project. The team was then able to connect 
+the problem to the clinical context and identify the main users and stakeholders involved.
+
+Another thing that went well was that the team was all on the same page. There weren't any
+major disagreements, and we had a shared understanding of the problem we were trying to
+solve and our vision for how to proceed.
+
+\subsubsection*{What pain points did you experience during this deliverable, and how did you resolve them?}
+
+One of the main challenges was deciding how much detail to include without making the problem statement
+too focused on the implementation. It was easy to start describing specific app features instead of
+focusing on the actual problem being addressed. The team and I resolved this by going back to the
+purpose of the deliverable and keeping the problem statement focused on the clinical experience,
+the needs of the users, and the overall problem.
+
+Another challenge was the timeline for the first deliverable. At first, we were too focused on picking
+a project and supervisor, so we did not get started on this deliverable as early as we could have.
+Once that was done, the first deliverable was due very soon after, so I had to stay on top of my work
+and make sure I was completing my tasks on time. We were able to manage this through our use of GitHub
+and good organization. By properly splitting up the work into issues and evenly distributing the tasks,
+everyone knew what they were responsible for and what needed to be completed. After that, the rest
+of the process went smoothly.
+
+\subsection*{Jake Finlay}
+
+\subsubsection*{What went well while writing this deliverable?}
+
+What made this deliverable straightforward for me was the amount of discussion
+we had already had with our TA and our stakeholders before writing anything
+down. By the time we sat down to write, the problem was well understood by
+everyone. Gathering the information for the deliverable was mostly a matter
+of writing down what we had already agreed on rather than working it out from
+scratch. The other thing that helped was that we had broken the deliverable into
+issues on GitHub ahead of time and assigned them to team members. That meant
+there was never any ambiguity about who owned what or what needed to be picked
+up next. This allowed me to move straight into writing instead of spending time
+coordinating.
+
+\subsubsection*{What pain points did you experience during this deliverable,
+and how did you resolve them?}
+
+The main pain point for me was collaborating through GitHub. Our team had not
+yet agreed on conventions for pull requests and commit messages, so everyone
+took a different approach. This made reviews take much longer than they needed
+to. The same issue appeared in the deliverables themselves. Each person's
+writing was strong on its own, but details such as formatting varied between
+team members and had to be aligned. We resolved this by discussing these
+differences in pull request comments and in our team chat. These discussions
+were necessary because our development plan was still being written and we had
+nothing to follow at the time of writing.
+
+\subsection*{Ahsan Muzammil}
+
+\subsubsection*{What went well while writing this deliverable?}
+\vspace{0.3em}
+
+One aspect that went well for me while writing this deliverable was developing the core goals for the project. The project description gave me a clear starting point for 
+understanding the main problems the application is intended to address. From there, I was able to identify the outcomes that I thought were most important and connect them 
+back to the problem statement. This helped me develop goals around reducing children's anxiety, improving cooperation during examinations, maintaining engagement across 
+different age groups, enabling at-home preparation, and improving clinical efficiency.
+
+I also found it helpful to think about how each goal could actually be measured. Rather than only stating what I wanted the application to accomplish, I considered potential 
+ways to determine whether the goal had been achieved, such as measuring anxiety levels, examination duration, repeated procedure attempts, activity completion, and user 
+feedback. This made me realize that a goal needs to be specific enough that its success can be evaluated.
+
+\subsubsection*{What pain points did you experience during this deliverable, and how did you resolve them?}
+\vspace{0.3em}
+
+One pain point I experienced while working on this deliverable was determining the appropriate level of detail for the project goals. Initially, I found it difficult to 
+distinguish between a goal and a feature of the application. For example, I considered ideas such as gamification, augmented reality, and AI personalization as potential goals 
+because they were important parts of how I imagined the application working. However, I realized that these describe how the application could be implemented rather than 
+what it should ultimately accomplish.
+
+I resolved this by going back to the problem statement and asking myself what outcome each proposed goal was intended to achieve. This helped me shift my focus from 
+specific features to broader outcomes, such as reducing anxiety, improving cooperation, and improving clinical efficiency. I also made each goal more measurable by 
+considering how I could determine whether the application actually achieved it. This process helped me create goals that were more closely connected to the problem we 
+were trying to solve and gave me a better understanding of how project goals should be defined.
+
+Another pain point I experienced during this deliverable was maintaining consistency with our version control practices. Since we had not yet completed the coding 
+standards and workflow sections of our Development Plan, we had not agreed on conventions such as how commits should be named or what structure should be used for 
+pull requests. As different team members began contributing to the deliverable, there were differences in the notation and structure they used. This made it more 
+difficult for me to follow a consistent format when making my own commits and pull requests.
+
+I resolved this by looking at the existing commits and pull requests from the team and trying to follow the patterns that were already being used where possible. 
+However, this also showed me that relying on existing practices is not an ideal long term solution when there is no agreed-upon standard. Going forward, I think 
+establishing the coding and version control conventions earlier in the development process would make collaboration easier and reduce inconsistencies. In particular, 
+agreeing on a commit naming convention and pull request template before everyone begins contributing would give the team a clear standard to follow.
+
+
+\subsection*{Jackson Beach}
+
+\subsubsection*{What went well while writing this deliverable?}
+The section I had in this deliverable was relatively straightforward to do, and thus I was able to accomplish it quickly and
+address my larger tasks in the development plan.
+
+\subsubsection*{What pain points did you experience during this deliverable, and how did you resolve them?}
+Personally, my section of the document was not the most complex. However, it was difficult in the sense that it
+can be tricky to describe inputs and outputs of the system with an appropriate level of abstraction. On the one hand,
+if you go too low level, it reads as implementation details, which does not provide enough flexibility at this stage of
+the project. On the other hand, if you keep it too high-level and vague, then it can be confusing to the reader, and also
+make them less actionable when you go to develop the system. I resolved this by trying to strike a balance between the two,
+mainly by focusing on ``what'' will be inputted by the user and outputted by the system during the normal game flow, and also
+by asking for feedback from my teammates on the level of abstraction I was using was too little or too much.
 
 \subsection*{Ethan McMehen}
 
@@ -127,5 +281,26 @@ devise descriptions about each stakeholder relative to their involvment in each
 of these three parts. This helped me reinforce my learning that breaking down 
 the problem or pain point into smaller pieces is a great approach for software 
 documentation.
+
+\subsection*{Group Answer(s)}
+
+\subsubsection*{How did you and your team adjust the scope of your goals to ensure they are suitable for a Capstone project?}
+\vspace{0.3em}
+
+When defining our goals, one of the main ways we adjusted the scope was by distinguishing between what the application needs to accomplish and additional features that may be 
+more difficult to implement within the time and resources available for a Capstone project. For example, augmented reality and AI based personalization were proposed as potential 
+additions to the application. After discussing the scope and considering the complexity involved in implementing and evaluating these technologies, we decided to treat them as 
+stretch goals rather than core requirements.
+
+We also ensured that our core goals focused on achievable outcomes rather than attempting to address every aspect of the paediatric ophthalmology experience. Instead of having 
+a broad goal such as improving the overall ophthalmology experience for children, we focused on specific outcomes such as reducing anxiety, improving cooperation during 
+examinations, maintaining engagement across age groups, enabling at home preparation, and improving clinical efficiency. This provided the project with sufficient complexity 
+for a senior design project while keeping the goals specific enough to be evaluated.
+
+Overall, adjusting the scope helped us recognize that a Capstone project does not need to include every interesting idea we develop. Our core goals should represent the 
+essential value of the proposed solution, while more technically complex ideas can be treated as stretch goals if time and resources allow.
+
+\bibliographystyle{plain}
+\bibliography{../../refs/References}
 
 \end{document}

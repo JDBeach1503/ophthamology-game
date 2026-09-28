@@ -6,7 +6,7 @@
 \\ Ethan McMehen
 \\ Jackson Beach
 \\ Jake Finlay
-\\ Ahsan Muzammil} % AUTHOR NAMES                    
+\\ Ahsan Muzammil} % AUTHOR NAMES
 
 \usepackage{hyperref}
     \hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue,
